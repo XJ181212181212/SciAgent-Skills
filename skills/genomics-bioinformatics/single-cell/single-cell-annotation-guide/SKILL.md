@@ -59,9 +59,9 @@ When building a marker panel for annotation, prioritize cross-validated markers 
 
 ## Pre-flight Interview
 
-Settle these with the user before writing any analysis code. Schema: see
-AGENTS.md "## Pre-flight Interview". The Decision Framework below explains the
-reasoning; this block is what the plan gate reads.
+Settle these with the user before writing any analysis code. The Decision
+Framework below explains the reasoning; this block is the machine-readable
+form of it.
 
 ```yaml
 decisions:

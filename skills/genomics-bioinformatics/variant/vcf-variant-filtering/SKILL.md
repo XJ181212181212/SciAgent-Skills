@@ -78,8 +78,7 @@ Understanding the FILTER column is the first step in any VCF quality assessment.
 
 ## Pre-flight Interview
 
-Settle these with the user before writing any analysis code. Schema: see
-AGENTS.md "## Pre-flight Interview".
+Settle these with the user before writing any analysis code.
 
 ```yaml
 decisions:

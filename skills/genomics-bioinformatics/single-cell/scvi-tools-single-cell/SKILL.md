@@ -37,8 +37,7 @@ pip install "scvi-tools[cuda12]"   # or scvi-tools[cuda11]
 
 ## Pre-flight Interview
 
-Settle these with the user before writing any analysis code. Schema: see
-AGENTS.md "## Pre-flight Interview".
+Settle these with the user before writing any analysis code.
 
 ```yaml
 decisions:
