@@ -45,6 +45,41 @@ Brief description of the skill (2-3 sentences). What problem does it solve? What
 pip install package1 package2
 ```
 
+## Pre-flight Interview
+
+<!-- Required when this entry runs an analysis whose parameters change the
+     scientific conclusion. Schema, the kind/source taxonomies, skip_if and
+     depends_on: see AGENTS.md "## Pre-flight Interview".
+     This block is the single authority — do not restate it as a table below.
+     If every knob here is cosmetic, delete the block and say so in one line. -->
+
+Settle these with the user before writing any analysis code.
+
+```yaml
+decisions:
+  - id: D1
+    param: grouping_variable
+    kind: required
+    source: data
+    ask: "Which column of the sample sheet separates the groups you want to compare?"
+    default: null
+
+  - id: D2
+    param: reference_level
+    kind: required
+    source: user
+    depends_on: [D1]
+    ask: "Within that column, which group is the baseline the others are compared against?"
+    default: "first level alphabetically"
+
+  - id: D3
+    param: n_threads
+    kind: never_ask
+    source: user
+    reason: "Affects runtime only, not the result"
+    default: 4
+```
+
 ## Quick Start
 
 <!-- Optional but recommended. Complete minimal pipeline in one code block (10-20 lines).
